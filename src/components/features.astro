@@ -4,6 +4,30 @@ import { Icon } from "astro-icon";
 
 const features = [
   {
+    title: "Machine Learning through Distributed Computing",
+    description:
+      "Harness the power of distributed computing to accelerate your machine learning tasks and unlock insights from massive datasets.",
+    icon: "mdi:brain",
+  },
+  {
+    title: "Serverless Compute, Database, and Front End Development",
+    description:
+      "Experience the benefits of serverless architecture for seamless scalability, efficient database operations, and rapid front-end development.",
+    icon: "mdi:cloud",
+  },
+  {
+    title: "Seamless LLM Usage with Long Term Memory through Vectors",
+    description:
+      "Leverage Long Short-Term Memory (LSTM) networks and advanced vector representations to enable continuous learning and enhanced AI capabilities.",
+    icon: "mdi:memory",
+  },
+  {
+    title: "Powered by Partners",
+    description:
+      "Our collaborations with industry leaders like Planetscale, Modal, and CodeSandbox ensure top-tier infrastructure, user-friendly modals, and hassle-free coding environments.",
+    icon: "mdi:handshake",
+  },
+  {
     title: "Bring Your Own Framework",
     description:
       "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
@@ -12,58 +36,32 @@ const features = [
   {
     title: "100% Static HTML, No JS",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "Render your entire page to static HTML, removing all JavaScript from your final build by default.",
     icon: "bx:bxs-window-alt",
   },
   {
     title: "On-Demand Components",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
+      "Automatically hydrate interactive components when they become visible on the page.",
     icon: "bx:bxs-data",
   },
   {
     title: "Broad Integration",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "Support for TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and other npm packages.",
     icon: "bx:bxs-bot",
   },
   {
     title: "SEO Enabled",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+      "Automatic sitemaps, RSS feeds, pagination, and collections enhance SEO and syndication.",
     icon: "bx:bxs-file-find",
   },
   {
     title: "Community",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "Open source project powered by a diverse community of contributors.",
     icon: "bx:bxs-user",
   },
 ];
----
-
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
-
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
-</div>
+	
