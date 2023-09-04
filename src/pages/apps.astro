@@ -6,6 +6,29 @@ import Layout from "@layouts/Layout.astro";
 import { Icon } from "astro-icon";
 ---
 
+const apps = [
+  {
+    id: 1,
+    name: "App 1",
+    thumbnail: "/path/to/app1-thumbnail.jpg",
+    purchased: true,
+  },
+  {
+    id: 2,
+    name: "App 2",
+    thumbnail: "/path/to/app2-thumbnail.jpg",
+    purchased: false,
+  },
+  {
+    id: 3,
+    name: "App 3",
+    thumbnail: "/path/to/app3-thumbnail.jpg",
+    purchased: true,
+  },
+  // Add more apps here
+];
+---
+
 <Layout title="Apps">
   <Container>
     <Sectionhead>
@@ -44,27 +67,4 @@ import { Icon } from "astro-icon";
   /* Add your custom styles here */
 </style>
 
-<script context="module">
-  export const apps = [
-    {
-      id: 1,
-      name: "App 1",
-      thumbnail: "/path/to/app1-thumbnail.jpg",
-      purchased: true,
-    },
-    {
-      id: 2,
-      name: "App 2",
-      thumbnail: "/path/to/app2-thumbnail.jpg",
-      purchased: false,
-    },
-    {
-      id: 3,
-      name: "App 3",
-      thumbnail: "/path/to/app3-thumbnail.jpg",
-      purchased: true,
-    },
-    // Add more apps here
-  ];
-</script>
 
