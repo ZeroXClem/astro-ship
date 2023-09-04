@@ -1,0 +1,38 @@
+---
+import Coursesform from "@components/coursesform.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="Courses">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Courses</Fragment>
+      <Fragment slot="desc">Here are our AI Courses.</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">Learn AI Today</h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          Interest in Artificial Intelligence? We are here to help. Sign up today or fill out our form for more information!
+        </p>
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:envelop" />
+            <a href="mailto:darrel@zeroxclem.com">darrel@zeroxclem.com</a>
+          </div>
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" />
+            <a href="tel:+1(321)7548129">+1 (321) 754 8129</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <Coursesform />
+    </div>
+  </Container>
+</Layout>

@@ -1,0 +1,90 @@
+---
+import Button from "./ui/button.astro";
+title: "Apps"
+---
+
+<template>
+  <section>
+    <h1>Available Apps</h1>
+    <ul>
+      <!-- Loop through the list of apps -->
+      {#each apps as app}
+        <li>
+          <a href={`/apps/${app.id}`} class="app-link">
+            <img src={app.thumbnail} alt={app.name} class="app-thumbnail" />
+            <h2>{app.name}</h2>
+          </a>
+          <div class="app-actions">
+            <!-- Show different actions based on app status -->
+            {#if app.purchased}
+              <button class="app-action app-download">Download</button>
+            {:else}
+              <button class="app-action app-purchase">Purchase</button>
+            {/if}
+          </div>
+        </li>
+      {/each}
+    </ul>
+  </section>
+</template>
+
+<style>
+  .app-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .app-thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+
+  .app-actions {
+    margin-top: 0.5rem;
+  }
+
+  .app-action {
+    padding: 0.5rem 1rem;
+    background-color: #0088cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .app-download {
+    background-color: #4caf50;
+  }
+
+  .app-purchase {
+    background-color: #f44336;
+  }
+</style>
+
+<script context="module">
+  export const apps = [
+    {
+      id: 1,
+      name: "App 1",
+      thumbnail: "/path/to/app1-thumbnail.jpg",
+      purchased: true,
+    },
+    {
+      id: 2,
+      name: "App 2",
+      thumbnail: "/path/to/app2-thumbnail.jpg",
+      purchased: false,
+    },
+    {
+      id: 3,
+      name: "App 3",
+      thumbnail: "/path/to/app3-thumbnail.jpg",
+      purchased: true,
+    },
+    // Add more apps here
+  ];
+</script>
