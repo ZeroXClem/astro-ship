@@ -1,37 +1,41 @@
 ---
-draft: false
-title: "The Complete Guide to Full Stack Web Development"
-snippet: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
-image: {
-    src: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?&fit=crop&w=430&h=240",
-    alt: "full stack web development"
-}
-publishDate: "2022-11-08 11:39"
-category: "Tutorials"
-author: "Janette Lynch"
-tags: [webdev, tailwindcss, frontend]
----
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit euismod rutrum, consequat fringilla ultricies nullam curae mollis semper conubia viverra, orci aenean dapibus pharetra nec tortor tellus cubilia. Ullamcorper mi lectus eu malesuada tempor massa praesent magna mattis posuere, lobortis vulputate ut duis magnis parturient habitant nibh id tristique, quis suspendisse donec nisl penatibus sem non feugiat taciti. Mollis per ridiculus integer cursus semper vestibulum fermentum penatibus cubilia blandit scelerisque, tempus platea leo posuere ac pharetra volutpat aliquet euismod id ullamcorper lobortis, urna est magna mus rhoncus massa curae libero praesent eget. Mattis malesuada vestibulum quis ac nam phasellus suscipit facilisis libero diam posuere, cursus massa vehicula neque imperdiet tincidunt dui egestas lacinia mollis aliquet orci, nisl curabitur dapibus litora dis cum nostra montes ligula praesent. Facilisi aliquam convallis molestie tempor blandit ultricies bibendum parturient cubilia quam, porttitor morbi torquent tempus taciti nec faucibus elementum phasellus, quis inceptos vestibulum gravida augue potenti eget nunc maecenas. Tempor facilisis ligula volutpat habitant consequat inceptos orci per potenti blandit platea, mus sapien eget vel libero vestibulum augue cubilia ut ultrices fringilla lectus, imperdiet pellentesque cum ridiculus convallis sollicitudin nisl interdum semper felis.
+## draft: false title: " The Perils and Pitfalls of LLMs: Can Vectors Save The Day?" snippet: "LLMs and vectors may seem like an unstoppable tag team for natural language processing. But crime doesn't pay, and even dynamic duos have their kryptonite!" image: { src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", alt: "data structures & algorithms" } publishDate: "2023-10-13 16:39" category: "Courses" author: "Darrel Bryan" tags: \[Vectors, LLM, Data\]
 
-Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti augue nulla vivamus senectus odio, quisque curabitur enim consequat class sociis feugiat ullamcorper, felis dis imperdiet cubilia commodo sed massa phasellus. Viverra purus mus nisi condimentum dui vehicula facilisis turpis, habitant nascetur lectus tempor quisque habitasse urna scelerisque, nibh nullam vestibulum luctus aenean mollis metus. Suscipit gravida duis nec aliquet natoque molestie a ridiculus scelerisque cum, justo cursus sapien sodales purus dignissim vel facilisi magnis, inceptos rutrum ut integer auctor commodo sollicitudin fames et. Faucibus ligula nibh sagittis mauris auctor posuere habitant, scelerisque phasellus accumsan egestas gravida viverra nam, sed etiam eleifend proin massa dictumst. Porttitor risus luctus per aenean tellus primis fringilla vitae fames lacinia mauris metus, nec pulvinar quisque commodo sodales ac nibh natoque phasellus semper placerat. Lectus aenean potenti leo sollicitudin tristique eros quam ligula, vestibulum diam consequat enim torquent nec tempus, blandit viverra dapibus eleifend dis nunc nascetur.
+# The Perils and Pitfalls of LLMs: Can Vectors Save The Day?
 
-## Sodales hendrerit malesuada et vestibulum
+LLMs and vectors may seem like an unstoppable tag team for natural language processing. But crime doesn't pay, and even dynamic duos have their kryptonite! Let's dive into the challenges holding back LLMs and vectors from AI glory.
 
-- Luctus euismod pretium nisi et, est dui enim.
+## LLMs - Not Quite Batman After All
 
-- Curae eget inceptos malesuada, fermentum class.
+Like Batman, LLMs may have high-tech gadgets and advanced training - but they still struggle with some villainous issues:
 
-- Porttitor vestibulum aliquam porta feugiat velit, potenti eu placerat.
+- **Data Sparseness** - Like fighting crime in a city with no people, LLMs need massive amounts of data to learn. But for topics like science or law, quality datasets are scarce. Cue sad trombone.
 
-- Ligula lacus tempus ac porta, vel litora.
+- **Sentence Compression** - Trying to handle long, convoluted sentences makes LLMs feel like Robin struggling to follow one of Batman's breathless rants. Researchers are exploring compression to give LLMs a fighting chance.
 
-Torquent non nisi lacinia faucibus nibh tortor taciti commodo porttitor, mus hendrerit id leo scelerisque mollis habitasse orci tristique aptent, lacus at molestie cubilia facilisis porta accumsan condimentum. Metus lacus suscipit porttitor integer facilisi torquent, nostra nulla platea at natoque varius venenatis, id quam pharetra aliquam leo. Dictum orci himenaeos quam mi fusce lacinia maecenas ac magna eleifend laoreet, vivamus enim curabitur ullamcorper est ultrices convallis suscipit nascetur. Ornare fames pretium ante ac eget nisi tellus vivamus, convallis mauris sapien imperdiet sollicitudin aliquet taciti quam, lacinia tempor primis magna iaculis at eu. Est facilisi proin risus eleifend orci torquent ultricies platea, quisque nullam vel porttitor euismod sociis non, maecenas sociosqu interdum arcu sed pharetra potenti. Aliquet risus tempus hendrerit sapien tellus eget cursus enim etiam dui, lobortis nostra pellentesque odio posuere morbi ad neque senectus arcu eu, turpis proin ac felis purus fames magnis dis dignissim.
+- **Text Generation** - When LLMs try to generate text, it often comes out like a cheesy supervillain monologue. Reinforcement learning helps them channel their inner Shakespeare.
 
-Orci volutpat augue viverra scelerisque dictumst ut condimentum vivamus, accumsan cum sem sollicitudin aliquet vehicula porta pretium placerat, malesuada euismod primis cubilia rutrum tempus parturient. Urna mauris in nibh morbi hendrerit vulputate condimentum, iaculis consequat porttitor dui dis euismod eros, arcu elementum venenatis varius lectus nisi. Nibh arcu ultrices semper morbi quam aptent quisque porta posuere iaculis, vestibulum cum vitae primis varius natoque conubia eu. Placerat sociis sagittis sociosqu morbi purus lobortis convallis, bibendum tortor ridiculus orci habitasse viverra dictum, quis rutrum fusce potenti volutpat vehicula. Curae porta inceptos lectus mus urna litora semper aliquam libero rutrum sem dui maecenas ligula quis, eget risus non imperdiet cum morbi magnis suspendisse etiam augue porttitor placerat facilisi hendrerit. Et eleifend eget augue duis fringilla sagittis erat est habitasse commodo tristique quisque pretium, suspendisse imperdiet inceptos mollis blandit magna mus elementum molestie sed vestibulum. Euismod morbi hendrerit suscipit felis ornare libero ligula, mus tortor urna interdum blandit nisi netus posuere, purus fermentum magnis nam primis nulla.
+- **Context Clues** - LLMs focus on individual words, missing the broader context like Batman obsessing over Riddler's latest puzzle. Attention mechanisms help LLMs see the big picture.
 
-## Elementum nisi urna cursus nisl quam ante tristique blandit ultricies eget
+- **Data Leakage** - Like Batman accidentally revealing his identity, data leakage causes models to overfit. Data augmentation and domain adaptation to the rescue!
 
-Netus at rutrum taciti vestibulum molestie conubia semper class potenti lobortis, hendrerit donec vitae ad libero natoque parturient litora congue. Torquent rhoncus odio cursus iaculis molestie arcu leo condimentum accumsan, laoreet congue duis libero justo tortor commodo fusce, massa eros hac euismod netus sodales mi magnis. Aenean nullam sollicitudin ad velit nulla venenatis suspendisse iaculis, aliquet senectus mollis aptent fringilla volutpat nascetur, nec urna vehicula lacinia neque augue orci. Suspendisse et eleifend convallis sollicitudin posuere diam turpis gravida congue ultrices, laoreet ultricies dapibus proin facilisis magna class praesent fusce. Mus morbi magnis ultricies sed turpis ultrices tempus tortor bibendum, netus nulla viverra torquent malesuada ridiculus tempor. Parturient sociosqu erat ullamcorper gravida natoque varius, etiam habitant augue praesent per curabitur iaculis, donec pellentesque cursus suscipit aliquet. Congue curae cursus scelerisque pellentesque quis fusce arcu eros dictumst luctus ridiculus nisl viverra, turpis class faucibus phasellus feugiat eleifend fringilla orci tristique habitasse conubia quam. Habitasse montes congue sodales rutrum cras torquent cursus auctor condimentum imperdiet egestas nascetur, platea tincidunt ut sollicitudin purus libero lobortis ad nisi diam quam.
+So LLMs have a ways to go before becoming the true superheros of AI! Let's see if vectors can help.
 
-Suspendisse et eleifend convallis sollicitudin posuere diam turpis gravida congue ultrices, laoreet ultricies dapibus proin facilisis magna class praesent fusce. Mus morbi magnis ultricies sed turpis ultrices tempus tortor bibendum, netus nulla viverra torquent malesuada ridiculus tempor. Parturient sociosqu erat ullamcorper gravida natoque varius, etiam habitant augue praesent per curabitur iaculis, donec pellentesque cursus suscipit aliquet. Congue curae cursus scelerisque pellentesque quis fusce arcu eros dictumst luctus ridiculus nisl viverra, turpis class faucibus phasellus feugiat eleifend fringilla orci tristique habitasse conubia quam. Habitasse montes congue sodales rutrum cras torquent cursus auctor condimentum imperdiet egestas nascetur.
+## Vectors - The Alfred to LLMs' Batman?
+
+Like Alfred supporting Batman, vectors reinforce LLMs - but even they fall prey to some fiendish limitations:
+
+- **Dimensionality Curse** - Like an overstuffed Batcave, higher vector dimensions require exponentially more data and computing power. Not ideal!
+
+- **Semantic Gaps** - Vectors fail to link related concepts, like Alfred forgetting the Batmobile's license plate number. Performance suffers as a result.
+
+- **Vector Drift** - Representations change over time, causing Alfred to misremember Batman's favorite cereal. Continual learning helps vectors stay sharp.
+
+- **Data Sparsity** - Some words lack vector insights like Alfred forgetting Batman's shoe size. Transfer learning fills in the gaps.
+
+- **Unsupervised Learning** - Like Alfred learning Criminal Psychology via books, unsupervised vectors miss key details without real-world experience. Pre-training and self-supervision help.
+
+- **Evaluation Problems** - Measuring vector performance is like Alfred grading his own butler skills. Crowd-sourcing and human evaluation provide essential outside perspective.
+
+So while vectors provide crucial support, they aren't a panacea. But don't fret - with dogged research and ingenuity, LLMs and vectors will overcome their challenges and fulfill their heroic potential! Excelsior!
