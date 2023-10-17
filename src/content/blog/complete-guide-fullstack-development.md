@@ -1,6 +1,16 @@
 ---
-
-## draft: false title: " The Perils and Pitfalls of LLMs: Can Vectors Save The Day?" snippet: "LLMs and vectors may seem like an unstoppable tag team for natural language processing. But crime doesn't pay, and even dynamic duos have their kryptonite!" image: { src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", alt: "data structures & algorithms" } publishDate: "2023-10-13 16:39" category: "Courses" author: "Darrel Bryan" tags: \[Vectors, LLM, Data\]
+draft: false 
+title: "The Perils and Pitfalls of LLMs: Can Vectors Save The Day?" 
+snippet: "LLMs and vectors may seem like an unstoppable tag team for natural language processing. But crime doesn't pay, and even dynamic duos have their kryptonite!" 
+image: {
+    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", 
+    alt: "vectors & machine learning algorithms" 
+} 
+publishDate: "2023-10-13 16:39" 
+category: "Courses" 
+author: "Darrel Bryan" 
+tags: \[Vectors, LLM, Data\]
+---
 
 # The Perils and Pitfalls of LLMs: Can Vectors Save The Day?
 

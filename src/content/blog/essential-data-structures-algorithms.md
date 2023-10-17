@@ -1,6 +1,16 @@
 ---
-
-## draft: false title: " Unlocking AI's Potential: How Vectors Power Large Language Models" snippet: "Let's dive into the inner workings of Large Language Models (LLMs) - the new hotness in natural language processing! " image: { src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", alt: "LLM & artificial intelligence" } publishDate: "2023-10-13 16:39" category: "Courses" author: "Darrel Bryan" tags: \[vectors, openai, David\]
+draft: false 
+title: "Unlocking AI's Potential: How Vectors Power Large Language Models" 
+snippet: "Let's dive into the inner workings of Large Language Models (LLMs) - the new hotness in natural language processing! " 
+image: { 
+    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", 
+    alt: "LLM & artificial intelligence" 
+} 
+publishDate: "2023-10-13 16:39" 
+category: "Courses" 
+author: "Darrel Bryan" 
+tags: [vectors, openai, David]
+---
 
 # Unlocking AI's Potential: How Vectors Power Large Language Models
 
