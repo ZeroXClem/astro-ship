@@ -3,7 +3,6 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
-import Themes from 'astro-themes';
 
 export interface Props {
   title: string;
@@ -25,65 +24,46 @@ const makeTitle = title
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="generator" content={Astro.generator} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
 
-  <Themes /> <!-- This is the magic line -->
-  <style>
-    html {
-      --background-color: white;
-      --text-color: black;
-
-      color: var(--text-color);
-      background-color: var(--background-color);
-    }
-
-    [data-theme='dark'] {
-      --background-color: black;
-      --text-color: white;
-    }
-  </style>
-
-  <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
-  <SEO
-    title={makeTitle}
-    description="ZeroXClem is an AI Engine for Production to Automated Scaling AI."
-    canonical={canonicalURL}
-    twitter={{
-      creator: "@ZeroXClem",
-      site: "@ZeroXClem",
-      card: "summary_large_image",
-    }}
-    openGraph={{
-      basic: {
-        url: canonicalURL,
-        type: "website",
-        title: `ZeroXClem - Potential AI for ZERO`,
-        image: resolvedImageWithDomain,
-      },
-      image: {
-        alt: "ZeroXClem Homepage Screenshot",
-      },
-    }}
-  />
-</head>
-<body>
-  <Navbar />
-  <button onclick="document.dispatchEvent(new CustomEvent('set-theme', { detail: 'dark' }))">
-    Activate dark mode!
-  </button>
-  <slot />
-  <Footer />
-  <style is:global>
-    /* Improve Page speed */
-    /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-    img {
-      content-visibility: auto;
-    }
-  </style>
-</body>
+    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
+    <SEO
+      title={makeTitle}
+      description="ZeroXClem is an AI Engine for Production to Automated Scaling AI."
+      canonical={canonicalURL}
+      twitter={{
+        creator: "@ZeroXClem",
+        site: "@ZeroXClem",
+        card: "summary_large_image",
+      }}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: `ZeroXClem - Potential AI for ZERO`,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: "ZeroXClem Homepage Screenshot",
+        },
+      }}
+    />
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Improve Page speed */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
 </html>
 
