@@ -9,7 +9,7 @@ image: {
 publishDate: "2023-10-13 16:39" 
 category: "Courses" 
 author: "Darrel Bryan" 
-tags: \[Vectors, LLM, Data\]
+tags: [Vectors, LLM, Data]
 ---
 
 # The Perils and Pitfalls of LLMs: Can Vectors Save The Day?
