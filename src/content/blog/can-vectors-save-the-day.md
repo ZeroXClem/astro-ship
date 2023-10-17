@@ -12,8 +12,6 @@ author: "Darrel Bryan"
 tags: [Vectors, LLM, Data]
 ---
 
-# The Perils and Pitfalls of LLMs: Can Vectors Save The Day?
-
 LLMs and vectors may seem like an unstoppable tag team for natural language processing. But crime doesn't pay, and even dynamic duos have their kryptonite! Let's dive into the challenges holding back LLMs and vectors from AI glory.
 
 ## LLMs - Not Quite Batman After All

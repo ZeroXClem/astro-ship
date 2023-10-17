@@ -12,7 +12,6 @@ author: "Darrel Bryan"
 tags: [vectors, openai, David]
 ---
 
-# Unlocking AI's Potential: How Vectors Power Large Language Models
 
 Let's dive into the inner workings of Large Language Models (LLMs) - the new hotness in natural language processing! I'll explain how these transformer-based models learn to generate human-like text and understand language contextually.
 
