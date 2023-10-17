@@ -3,7 +3,7 @@ draft: false
 title: "The Perils and Pitfalls of LLMs: Can Vectors Save The Day?" 
 snippet: "LLMs and vectors may seem like an unstoppable tag team for natural language processing. But crime doesn't pay, and even dynamic duos have their kryptonite!" 
 image: {
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", 
+    src: "https://images.unsplash.com/photo-1609693117459-886fbe8443ff?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1936", 
     alt: "vectors & machine learning algorithms" 
 } 
 publishDate: "2023-10-13 16:39" 

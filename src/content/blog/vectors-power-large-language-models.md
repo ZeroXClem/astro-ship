@@ -3,7 +3,7 @@ draft: false
 title: "Unlocking AI's Potential: How Vectors Power Large Language Models" 
 snippet: "Let's dive into the inner workings of Large Language Models (LLMs) - the new hotness in natural language processing! " 
 image: { 
-    src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240", 
+    src: "https://images.unsplash.com/photo-1609860055885-5e8d8d00ad5e?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1936", 
     alt: "LLM & artificial intelligence" 
 } 
 publishDate: "2023-10-13 16:39" 
