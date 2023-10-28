@@ -25,42 +25,36 @@ tags: [Renewable Energy, Climate Change, Carbon Capture, AI, Sustainability]
 ## <a name="ai-renewable"></a>Artificial Intelligence in Renewable Energy
 
 ### Enhancing Market Dynamics and Energy Transition:
-- **Realistic Energy Market Simulation**: Utilization of AI for simulating energy markets, aiding decision-making, and fostering market models conducive for renewable energy adoption [1,AI FOR ENERGY](https://cai.ieee.org/2023/ai-for-energy/#:~:text=AI%20for%20Energy%20Markets%20enabling,reservoirs%2C%20customize%20drilling%20and).
-- **Accelerating Energy Transition**: AI propels decarbonization in energy-intensive sectors by aligning with government and consumer demands for CO2 emissions reductions [2,AI will accelerate the energy transition](https://www.weforum.org/agenda/2021/09/this-is-how-ai-will-accelerate-the-energy-transition/#:~:text=Three%20key%20trends%20are%20driving,rapid%20reductions%20in%20CO2%20emissions).
+- **Realistic Energy Market Simulation**: Utilization of AI for simulating energy markets, aiding decision-making, and fostering market models conducive for renewable energy adoption [1](https://cai.ieee.org/2023/ai-for-energy/#:~:text=AI%20for%20Energy%20Markets%20enabling,reservoirs%2C%20customize%20drilling%20and).
+- **Accelerating Energy Transition**: AI propels decarbonization in energy-intensive sectors by aligning with government and consumer demands for CO2 emissions reductions [2](https://www.weforum.org/agenda/2021/09/this-is-how-ai-will-accelerate-the-energy-transition/#:~:text=Three%20key%20trends%20are%20driving,rapid%20reductions%20in%20CO2%20emissions).
 
 ### Stabilising Electric Grids:
-- **Grid Reliability**: AI mitigates grid unreliability through self-learning weather models, ensuring adjustments in power input and output based on real-time local weather data [3,
-        Future of Renewable Energy: | Quanta
-    ](https://www.quanta-cs.com/blogs/2022-9/is-artificial-intelligence-the-future-of-renewable-energy).
+- **Grid Reliability**: AI mitigates grid unreliability through self-learning weather models, ensuring adjustments in power input and output based on real-time local weather data [3](https://www.quanta-cs.com/blogs/2022-9/is-artificial-intelligence-the-future-of-renewable-energy).
 
 ### Smart Equipment Maintenance:
-- **Predictive Analysis**: AI-driven predictive analysis for monitoring infrastructure, scheduling maintenance work, and ensuring operational efficiency [4,
-        Future of Renewable Energy:| Quanta
-    ](https://www.quanta-cs.com/blogs/2022-9/is-artificial-intelligence-the-future-of-renewable-energy).
+- **Predictive Analysis**: AI-driven predictive analysis for monitoring infrastructure, scheduling maintenance work, and ensuring operational efficiency [4](https://www.quanta-cs.com/blogs/2022-9/is-artificial-intelligence-the-future-of-renewable-energy).
 
 ### Intelligent Energy Storage:
-- **Demand Prediction**: AI facilitates efficient energy storage by predicting demand surges and troughs, aiding in energy distribution and savings [5,
-        Future of Renewable Energy:Quanta
-    ](https://www.quanta-cs.com/blogs/2022-9/is-artificial-intelligence-the-future-of-renewable-energy).
+- **Demand Prediction**: AI facilitates efficient energy storage by predicting demand surges and troughs, aiding in energy distribution and savings [5](https://www.quanta-cs.com/blogs/2022-9/is-artificial-intelligence-the-future-of-renewable-energy).
 
 ---
 
 ## <a name="global-energy"></a>Global Energy Consumption and Climate Change
 
 ### Persistent Reliance on Fossil Fuels:
-- **Fossil Fuel Dominance**: Despite the growth of renewables, fossil fuels maintain a significant share in global energy consumption, impacting carbon emissions [6,Global Energy Trends: Insights For  2023 - Forbes](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/#:~:text=The%20newest%20Review%20shows%20the,renewable%20power%20expanded%20at%20record).
+- **Fossil Fuel Dominance**: Despite the growth of renewables, fossil fuels maintain a significant share in global energy consumption, impacting carbon emissions [6](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/#:~:text=The%20newest%20Review%20shows%20the,renewable%20power%20expanded%20at%20record).
 
 ### Renewable Energy Growth:
-- **Solar and Wind Energy**: Remarkable growth in solar and wind energy adoption contributing to a shift towards clean energy [7,Global Energy Trends: Insights From The 2023 Statistical Review Of World Energy](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/).
+- **Solar and Wind Energy**: Remarkable growth in solar and wind energy adoption contributing to a shift towards clean energy [7](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/).
 
 ### Carbon Emissions:
-- **Emissions Escalation**: Rising carbon emissions underscore the need for accelerated clean energy transitions to meet global climate goals [8,Global Energy Trends: Insights From The 2023 Statistical Review Of World Energy](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/).
+- **Emissions Escalation**: Rising carbon emissions underscore the need for accelerated clean energy transitions to meet global climate goals [8](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/).
 
 ### Electricity Generation:
-- **Generation Increase**: The significant increment in global electricity generation with a rising share of wind and solar energy [9,Global Energy Trends: Insights From The 2023 Statistical Review Of World Energy](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/).
+- **Generation Increase**: The significant increment in global electricity generation with a rising share of wind and solar energy [9](https://www.forbes.com/sites/rrapier/2023/08/06/global-energy-trends-insights-from-the-2023-statistical-review-of-world-energy/).
 
 ### Transition to Clean Energy:
-- **Clean Energy Economy**: The emergence of a clean energy economy driven by investments in solar PV and EVs, bolstering hopes for a sustainable energy future [10,Executive summary – World Energy Outlook 2023 – Analysis - IEA](https://www.iea.org/reports/world-energy-outlook-2023/executive-summary).
+- **Clean Energy Economy**: The emergence of a clean energy economy driven by investments in solar PV and EVs, bolstering hopes for a sustainable energy future [10](https://www.iea.org/reports/world-energy-outlook-2023/executive-summary).
 
 ---
 
@@ -68,19 +62,19 @@ tags: [Renewable Energy, Climate Change, Carbon Capture, AI, Sustainability]
 
 ### Types of Carbon Capture and Storage Technologies:
 - **Point-source CCS**: Capturing CO2 emissions at the source like smokestacks.
-- **Direct Air Capture (DAC)**: Capturing CO2 directly from the atmosphere [11,Explainer: What is carbon capture and storage and will it cut emissions ...](https://www.reuters.com/sustainability/what-is-carbon-capture-storage-will-it-cut-emissions-2023-07-31/#:~:text=There%20are%20two%20main%20types,DAC).
+- **Direct Air Capture (DAC)**: Capturing CO2 directly from the atmosphere [11](https://www.reuters.com/sustainability/what-is-carbon-capture-storage-will-it-cut-emissions-2023-07-31/#:~:text=There%20are%20two%20main%20types,DAC).
 
 ### Investment in Carbon Removal Technologies:
-- **Engineered Carbon Removal**: Significant investment by the Energy Department in projects aimed at direct air capture of carbon dioxide [oai_citation:12,Energy Department announces largest-ever investment in 'carbon removal ...](https://apnews.com/article/climate-carbon-direct-air-capture-energy-3779d7776120570e9e9a53a00693dd1a#:~:text=Updated%205%3A11%20AM%20PDT%2C%20August,yet%20exist%20on%20a).
+- **Engineered Carbon Removal**: Significant investment by the Energy Department in projects aimed at direct air capture of carbon dioxide [12](https://apnews.com/article/climate-carbon-direct-air-capture-energy-3779d7776120570e9e9a53a00693dd1a#:~:text=Updated%205%3A11%20AM%20PDT%2C%20August,yet%20exist%20on%20a).
 
 ### Market Growth and Public-Private Partnerships:
-- **Market Growth**: Rapid growth in the CCS market with public-private partnerships as a crucial catalyst [13,Carbon-capture tech is key to reaching climate goals](https://www.weforum.org/agenda/2023/10/why-carbon-capture-is-key-to-reaching-climate-goals/#:~:text=Carbon,the%20key%20to%20unlocking).
+- **Market Growth**: Rapid growth in the CCS market with public-private partnerships as a crucial catalyst [13](https://www.weforum.org/agenda/2023/10/why-carbon-capture-is-key-to-reaching-climate-goals/#:~:text=Carbon,the%20key%20to%20unlocking).
 
 ### Projected Capacity and Cost-effectiveness:
-- **CCUS Capacity**: Projected increase in CCUS capacity with cost-effective implementation and commercial viability driving global adoption [14,Scaling Carbon Capture Technology Won't Break the Bank | BCG](https://www.bcg.com/publications/2023/scaling-carbon-capture-technology-wont-break-bank).
+- **CCUS Capacity**: Projected increase in CCUS capacity with cost-effective implementation and commercial viability driving global adoption [14](https://www.bcg.com/publications/2023/scaling-carbon-capture-technology-wont-break-bank).
 
 ### Innovative Carbon Capture and Conversion System:
-- **Conversion to Methanol**: Innovative system capturing and converting CO2 into methanol, integrating into various industrial setups and making carbon capture more affordable and widespread [15,Scientists unveil least costly carbon capture system to date](https://techxplore.com/news/2023-01-scientists-unveil-carbon-capture-date.html).
+- **Conversion to Methanol**: Innovative system capturing and converting CO2 into methanol, integrating into various industrial setups and making carbon capture more affordable and widespread [15](https://techxplore.com/news/2023-01-scientists-unveil-carbon-capture-date.html).
 
 ---
 
