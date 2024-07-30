@@ -1,80 +1,46 @@
----
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
-import PricingCard from "@components/pricing.astro";
 
-const pricing = [
-  {
-    name: "Personal",
-    price: "Free",
-    popular: false,
-    features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Latest Libraries",
-      "AI Agent Templates",
-      "Basic OpenAI Stack",
-      "Limited Chatbot Support",
-    ],
-    button: {
-      text: "Get Started",
-      link: "/",
-    },
-  },
-  {
-    name: "Startup",
-    price: {
-      monthly: "$30",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
-    },
-    popular: true,
-    features: [
-      "All Free Features",
-      "Up to 10 users",
-      "20 How To Guides",
-      "Unlimited AI Agent Templates",
-      "Advanced OpenAI + LLM Stack",
-      "Unlimited ChatBot Support",
-    ],
-    button: {
-      text: "Get Started",
-      link: "#",
-    },
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    popular: false,
-    features: [
-      "All Pro Features",
-      "Unlimited Custom Agents",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated AI DevOps Manager",
-      "24/7 AI Phone Support",
-    ],
-    button: {
-      text: "Contact us",
-      link: "/contact",
-    },
-  },
-];
+---
+title: Pricing
+layout: ../layouts/Layout.astro
 ---
 
-<Layout title="Pricing">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
-      <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
-      </Fragment>
-    </Sectionhead>
-
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-      {pricing.map((item) => <PricingCard plan={item} />)}
+<section class="pricing-section py-8">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold text-center mb-6">Our Pricing Plans</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="pricing-item p-6 bg-white shadow-lg rounded-lg text-center">
+        <h2 class="text-3xl font-semibold mb-2">Basic Plan</h2>
+        <p class="text-xl font-bold mb-4">$19/month</p>
+        <ul class="list-disc pl-5 mb-4 text-left">
+          <li>Feature One</li>
+          <li>Feature Two</li>
+          <li>Feature Three</li>
+        </ul>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="pricing-item p-6 bg-white shadow-lg rounded-lg text-center">
+        <h2 class="text-3xl font-semibold mb-2">Standard Plan</h2>
+        <p class="text-xl font-bold mb-4">$49/month</p>
+        <ul class="list-disc pl-5 mb-4 text-left">
+          <li>Feature One</li>
+          <li>Feature Two</li>
+          <li>Feature Three</li>
+          <li>Feature Four</li>
+        </ul>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="pricing-item p-6 bg-white shadow-lg rounded-lg text-center">
+        <h2 class="text-3xl font-semibold mb-2">Premium Plan</h2>
+        <p class="text-xl font-bold mb-4">$99/month</p>
+        <ul class="list-disc pl-5 mb-4 text-left">
+          <li>Feature One</li>
+          <li>Feature Two</li>
+          <li>Feature Three</li>
+          <li>Feature Four</li>
+          <li>Feature Five</li>
+        </ul>
+        <a href="/signup" class="btn btn-primary">Get Started</a>
+      </div>
     </div>
-  </Container>
-</Layout>
+  </div>
+</section>

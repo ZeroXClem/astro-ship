@@ -1,17 +1,44 @@
+
 ---
-import Container from "@components/container.astro";
-import Cta from "@components/cta.astro";
-import Features from "@components/features.astro";
-import Hero from "@components/hero.astro";
-import Logos from "@components/logos.astro";
-import Layout from "@layouts/Layout.astro";
+title: Home
+layout: ../layouts/Layout.astro
 ---
 
-<Layout title="">
-  <Container>
-    <Hero />
-    <Features />
-    <Logos />
-    <Cta />
-  </Container>
-</Layout>
+<section class="hero-section py-8 bg-cover" style="background-image: url('/src/assets/hero.png');">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl font-bold text-white mb-4">Welcome to ZeroXClem</h1>
+    <p class="text-xl text-white mb-8">Innovative solutions for a better tomorrow</p>
+    <a href="/pricing" class="btn btn-primary">Get Started</a>
+  </div>
+</section>
+
+<section class="features-section py-8">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-semibold text-center mb-6">Key Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="feature-item p-4 bg-white shadow-lg rounded-lg text-center">
+        <img src="/src/assets/feature1.png" alt="Feature 1" class="mx-auto mb-4">
+        <h3 class="text-2xl font-bold mb-2">Feature One</h3>
+        <p class="text-lg">Description of the first key feature that highlights its benefits and utility.</p>
+      </div>
+      <div class="feature-item p-4 bg-white shadow-lg rounded-lg text-center">
+        <img src="/src/assets/feature2.png" alt="Feature 2" class="mx-auto mb-4">
+        <h3 class="text-2xl font-bold mb-2">Feature Two</h3>
+        <p class="text-lg">Description of the second key feature that highlights its benefits and utility.</p>
+      </div>
+      <div class="feature-item p-4 bg-white shadow-lg rounded-lg text-center">
+        <img src="/src/assets/feature3.png" alt="Feature 3" class="mx-auto mb-4">
+        <h3 class="text-2xl font-bold mb-2">Feature Three</h3>
+        <p class="text-lg">Description of the third key feature that highlights its benefits and utility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section py-8 bg-gray-800 text-white text-center">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
+    <p class="text-xl mb-6">Join ZeroXClem and experience the future of technology today.</p>
+    <a href="/waitlist" class="btn btn-secondary">Join the Waitlist</a>
+  </div>
+</section>

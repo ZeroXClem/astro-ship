@@ -1,48 +1,28 @@
----
-import Layout from "@layouts/Layout.astro";
-import Container from "@components/container.astro";
-import Sectionhead from "@components/sectionhead.astro";
 
 ---
+title: About Us
+layout: ../layouts/Layout.astro
+---
 
-<Layout title="About">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">Mission of ZeroXClem.</Fragment>
-    </Sectionhead>
-
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Democratizing Knowledge with AI
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        We believe that knowledge is the key to unlocking your full potential in the tech world.
-        Our platform is designed with global accesibility in mind. Anyone over planet earth should be able to learn AI.
-        Whether you're a tech enthusiast, hobbyist, or founder, ZeroXClem is here to guide you every step of the way.
-      </p>
-    </div>
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        A Simple Vision
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        Our mission is to revolutionize the way people learn and navigage the tech industry. We understand this journey
-        can be daunting, filled with complexities and overwhelming amounts of information. That's why we're dedicated to condensing
-        and simplifying that knowledge, making it easily digestible and enjoyable. Making it easy to focus on what truly matters 
-        - building and creating. 
-      </p>
-    </div>
-    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-gray-800">
-        Our Approach
-      </h2>
-      <p class="text-lg leading-relaxed text-slate-500">
-        At ZeroXClem, we approach learning with unwavering discipline and relentless focus. We believe in starting simple
-        and building a strong foundation. Our platform is designed to be user-friendly, with a seamless user experience 
-        across all devices. We offer free learning materials to get you started. With ZeroXClem you can accelerate your learning
-        and make progress at your own pace.
-      </p>
-    </div>
-  </Container>
-</Layout>
+<section class="about-section py-8">
+  <div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold mb-4">About ZeroXClem</h1>
+    <p class="text-lg mb-4">At ZeroXClem, we are dedicated to delivering innovative solutions that drive real-world value and utility. Our mission is to empower businesses with cutting-edge technology that enhances productivity and efficiency.</p>
+    <h2 class="text-3xl font-semibold mb-3">Our Mission</h2>
+    <p class="mb-4">To revolutionize the industry by providing top-notch solutions that are both practical and impactful. We strive to be leaders in innovation, constantly pushing the boundaries of what's possible.</p>
+    <h2 class="text-3xl font-semibold mb-3">Our Vision</h2>
+    <p class="mb-4">To create a world where technology seamlessly integrates with everyday life, improving the way we work and live. We envision a future where our solutions are indispensable tools for success.</p>
+    <h2 class="text-3xl font-semibold mb-3">Our History</h2>
+    <p class="mb-4">Founded in 2020, ZeroXClem has quickly grown from a small startup to a leading provider of technological solutions. Our journey has been marked by a commitment to excellence and a passion for innovation.</p>
+    <h2 class="text-3xl font-semibold mb-3">Our Team</h2>
+    <p class="mb-4">Our team is composed of industry experts, creative thinkers, and dedicated professionals who are passionate about making a difference. We believe in fostering a collaborative environment where ideas can flourish.</p>
+    <h2 class="text-3xl font-semibold mb-3">Why Choose Us?</h2>
+    <ul class="list-disc pl-5 mb-4">
+      <li>Innovative Solutions</li>
+      <li>Expert Team</li>
+      <li>Customer-Centric Approach</li>
+      <li>Proven Track Record</li>
+      <li>Commitment to Excellence</li>
+    </ul>
+  </div>
+</section>
