@@ -1,45 +1,80 @@
-
 ---
-title: Pricing
-layout: ../layouts/Layout.astro
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/pricing.astro";
+
+const pricing = [
+  {
+    name: "Personal",
+    price: "Free",
+    popular: false,
+    features: [
+      "Lifetime free",
+      "Up to 3 users",
+      "Latest Libraries",
+      "AI Agent Templates",
+      "Basic OpenAI Stack",
+      "Limited Chatbot Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Startup",
+    price: {
+      monthly: "$30",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      "All Free Features",
+      "Up to 10 users",
+      "20 How To Guides",
+      "Unlimited AI Agent Templates",
+      "Advanced OpenAI + LLM Stack",
+      "Unlimited ChatBot Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "#",
+    },
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    popular: false,
+    features: [
+      "All Pro Features",
+      "Unlimited Custom Agents",
+      "99.99% Uptime SLA",
+      "SAML & SSO Integration",
+      "Dedicated AI DevOps Manager",
+      "24/7 AI Phone Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
 ---
 
-<section class="pricing-section py-8">
-  <div class="container mx-auto px-4">
-    <h1 class="text-4xl font-bold text-center mb-6">AI Assistance Plans</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="pricing-item p-6 bg-white shadow-lg rounded-lg text-center">
-        <h2 class="text-3xl font-semibold mb-2">Hobbyist Plan</h2>
-        <p class="text-xl font-bold mb-4">$29/month</p>
-        <ul class="list-disc pl-5 mb-4 text-left">
-          <li>Basic AI assistance</li>
-          <li>5 AI queries per day</li>
-          <li>Email support</li>
-        </ul>
-        <a href="/signup" class="btn btn-primary">Get Started</a>
-      </div>
-      <div class="pricing-item p-6 bg-white shadow-lg rounded-lg text-center">
-        <h2 class="text-3xl font-semibold mb-2">Startup Plan</h2>
-        <p class="text-xl font-bold mb-4">$99/month</p>
-        <ul class="list-disc pl-5 mb-4 text-left">
-          <li>Advanced AI assistance</li>
-          <li>50 AI queries per day</li>
-          <li>Priority email support</li>
-          <li>Custom AI model fine-tuning</li>
-        </ul>
-        <a href="/signup" class="btn btn-primary">Get Started</a>
-      </div>
-      <div class="pricing-item p-6 bg-white shadow-lg rounded-lg text-center">
-        <h2 class="text-3xl font-semibold mb-2">Business Plan</h2>
-        <p class="text-xl font-bold mb-4">$299/month</p>
-        <ul class="list-disc pl-5 mb-4 text-left">
-          <li>Enterprise-level AI assistance</li>
-          <li>Unlimited AI queries</li>
-          <li>24/7 phone and email support</li>
-          <li>Custom AI model development</li>
-          <li>API access for integration</li>
-        </ul>
-        <a href="/signup" class="btn btn-primary">Get Started</a>
-      </div>
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
-</section>
+  </Container>
+</Layout>
