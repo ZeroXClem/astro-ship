@@ -63,6 +63,21 @@ const makeTitle = title
       img {
         content-visibility: auto;
       }
+      
+      :root {
+        --color-text: #111827;
+        --color-bg: #ffffff;
+      }
+
+      .dark {
+        --color-text: #f3f4f6;
+        --color-bg: #1f2937;
+      }
+
+      body {
+        color: var(--color-text);
+        background-color: var(--color-bg);
+      }
     </style>
   </body>
 </html>
