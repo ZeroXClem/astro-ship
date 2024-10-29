@@ -11,7 +11,7 @@ const { allPosts } = Astro.props;
     onInput={(e) => handleSearch(e.target.value)}
     aria-label="Search"
   />
-  {searchResults.length > 0 && (
+  {searchResults && searchResults.length > 0 && (
     <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
       {searchResults.map((post) => (
         <li>
@@ -28,11 +28,12 @@ const { allPosts } = Astro.props;
   import { useState } from 'react';
 
   function SearchBar({ allPosts }) {
+    // Initialize searchResults as an empty array
     const [searchResults, setSearchResults] = useState([]);
 
     const handleSearch = (query) => {
       if (query.length === 0) {
-        setSearchResults([]);
+        setSearchResults([]);  // Reset search results if query is empty
         return;
       }
       const results = allPosts.filter(post =>
@@ -54,7 +55,7 @@ const { allPosts } = Astro.props;
         {searchResults.length > 0 && (
           <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
             {searchResults.map((post) => (
-              <li>
+              <li key={post.slug}>
                 <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
                   {post.title}
                 </a>
@@ -68,3 +69,4 @@ const { allPosts } = Astro.props;
 
   export default SearchBar;
 </script>
+
