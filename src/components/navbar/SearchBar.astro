@@ -1,19 +1,14 @@
 ---
 import { useState } from 'astro/client';
-import type { JSX } from 'astro/jsx-runtime';
+import type { BlogPost } from 'astro/types'; // Assuming BlogPost type is defined elsewhere
 
-interface BlogPost {
-  slug: string;
-  data: {
-    title: string;
-    tags: string[];
-  };
-}
-
+// Props expected by the SearchBar component
 interface Props {
   allPosts: BlogPost[];
 }
-const { allPosts } = Astro.props || { allPosts: [] };  // Ensure allPosts defaults to an empty array
+
+const { allPosts } = Astro.props;
+const [searchResults, setSearchResults] = useState<BlogPost[]>([]); // Correct initialization
 ---
 
 <div class="relative">
@@ -21,39 +16,36 @@ const { allPosts } = Astro.props || { allPosts: [] };  // Ensure allPosts defaul
     type="text"
     placeholder="Search..."
     class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-    onInput={(e) => handleSearch(e.target.value)}
+    onInput={(e) => handleSearch(e.target.value)}  <!-- Correct function call -->
     aria-label="Search"
   />
-  {Astro.client(() => {
-    const [searchResults, setSearchResults] = useState<BlogPost[]>([]);
-
-    const handleSearch = (query: string) => {
-      if (query.length === 0) {
-        setSearchResults([]);
-        return;
-      }
-      const results = allPosts.filter((post) =>
-        post.data.title.toLowerCase().includes(query.toLowerCase()) ||
-        post.data.tags.some((tag) => tag.toLowerCase().includes(query.toLowerCase()))
-      );
-      setSearchResults(results.slice(0, 5));  // Limit to 5 results
-    };
-
-    return (
-      <>
-        {searchResults.length > 0 && (
-          <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
-            {searchResults.map((post) => (
-              <li key={post.slug}>
-                <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
-                  {post.data.title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        )}
-      </>
-    );
-  })}
+  {searchResults.length > 0 && (
+    <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
+      {searchResults.map((post) => (
+        <li key={post.slug}>
+          <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
+            {post.data.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
 </div>
+
+<script>
+  // Function to handle search input
+  const handleSearch = (query: string) => {
+    if (query.length === 0) {
+      setSearchResults([]);  // Reset search results if the query is empty
+      return;
+    }
+
+    // Filter posts based on the query
+    const results = allPosts.filter((post) =>
+      post.data.title.toLowerCase().includes(query.toLowerCase()) ||
+      post.data.tags.some((tag) => tag.toLowerCase().includes(query.toLowerCase()))
+    );
+    setSearchResults(results.slice(0, 5));  // Limit the results to 5
+  };
+</script>
 
