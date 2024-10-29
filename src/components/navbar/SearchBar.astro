@@ -1,8 +1,21 @@
 ---
-import { useState } from 'react';
+import { useState } from 'astro/client';
+import type { JSX } from 'astro/jsx-runtime';
 
-const { allPosts } = Astro.props || { allPosts: [] }; // Fallback in case allPosts is undefined
+interface BlogPost {
+  slug: string;
+  data: {
+    title: string;
+    tags: string[];
+  };
+}
+
+interface Props {
+  allPosts: BlogPost[];
+}
+const { allPosts } = Astro.props || { allPosts: [] };  // Ensure allPosts defaults to an empty array
 ---
+
 <div class="relative">
   <input
     type="text"
@@ -11,67 +24,36 @@ const { allPosts } = Astro.props || { allPosts: [] }; // Fallback in case allPos
     onInput={(e) => handleSearch(e.target.value)}
     aria-label="Search"
   />
-  {searchResults && searchResults.length > 0 && (
-    <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
-      {searchResults.map((post) => (
-        <li key={post.slug}>
-          <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
-            {post.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  )}
-</div>
+  {Astro.client(() => {
+    const [searchResults, setSearchResults] = useState<BlogPost[]>([]);
 
-<script type="module">
-  import { useState } from 'react';
-
-  function SearchBar({ allPosts = [] }) { // Default to empty array if no posts are passed
-    const [searchResults, setSearchResults] = useState([]);
-
-    const handleSearch = (query) => {
+    const handleSearch = (query: string) => {
       if (query.length === 0) {
-        setSearchResults([]);  // Reset search results if query is empty
+        setSearchResults([]);
         return;
       }
-
-      if (allPosts.length === 0) {
-        // No posts available to search through
-        return;
-      }
-
-      const results = allPosts.filter(post =>
+      const results = allPosts.filter((post) =>
         post.data.title.toLowerCase().includes(query.toLowerCase()) ||
-        post.data.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
+        post.data.tags.some((tag) => tag.toLowerCase().includes(query.toLowerCase()))
       );
-      setSearchResults(results.slice(0, 5)); // Limit to 5 results
+      setSearchResults(results.slice(0, 5));  // Limit to 5 results
     };
 
     return (
-      <div class="relative">
-        <input
-          type="text"
-          placeholder="Search..."
-          class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-          onInput={(e) => handleSearch(e.target.value)}
-          aria-label="Search"
-        />
+      <>
         {searchResults.length > 0 && (
           <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
             {searchResults.map((post) => (
               <li key={post.slug}>
                 <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
-                  {post.title}
+                  {post.data.title}
                 </a>
               </li>
             ))}
           </ul>
         )}
-      </div>
+      </>
     );
-  }
-
-  export default SearchBar;
-</script>
+  })}
+</div>
 

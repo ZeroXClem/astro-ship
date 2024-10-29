@@ -1,15 +1,23 @@
 ---
-import Container from "@components/container.astro";
+// Fetch blog posts
 import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import SearchBar from "@components/navbar/SearchBar.astro"; // Ensure correct path
+import { getCollection } from 'astro:content';
+
+// Fetch blog posts for search
+const allPosts = await getCollection('blog');
 ---
 
-<Layout title="404 Not Found">
+<Layout title="Page Not Found | ZeroXClem">
   <Container>
-    <div class="min-h-[calc(100vh-16rem)] flex items-center justify-center">
-      <div class="mt-16 text-center">
-        <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">404</h1>
-        <p class="text-lg mt-4 text-slate-600">Page not found.</p>
-      </div>
-    </div>
+    <h1 class="text-4xl font-bold mt-10">404 - Page Not Found</h1>
+    <p class="mt-4 text-lg">Sorry, the page you're looking for doesn't exist.</p>
+    
+    <!-- Ensure SearchBar has the necessary props -->
+    <SearchBar allPosts={allPosts} />
+    
+    <a href="/" class="mt-6 inline-block text-blue-500 hover:underline">Go back home</a>
   </Container>
 </Layout>
+
