@@ -1,14 +1,6 @@
 ---
-import { useState } from 'astro/client';
-import type { BlogPost } from 'astro/types'; // Assuming BlogPost type is defined elsewhere
-
-// Props expected by the SearchBar component
-interface Props {
-  allPosts: BlogPost[];
-}
-
 const { allPosts } = Astro.props;
-const [searchResults, setSearchResults] = useState<BlogPost[]>([]); // Correct initialization
+let searchResults = []; // Define searchResults as a variable
 ---
 
 <div class="relative">
@@ -16,36 +8,39 @@ const [searchResults, setSearchResults] = useState<BlogPost[]>([]); // Correct i
     type="text"
     placeholder="Search..."
     class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-    onInput={(e) => handleSearch(e.target.value)}  <!-- Correct function call -->
+    onInput={(e) => handleSearch(e.target.value)} <!-- Vanilla JS function -->
     aria-label="Search"
   />
-  {searchResults.length > 0 && (
-    <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
-      {searchResults.map((post) => (
-        <li key={post.slug}>
-          <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
-            {post.data.title}
-          </a>
-        </li>
-      ))}
-    </ul>
-  )}
+  <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10" id="search-results">
+    <!-- Dynamically render search results here -->
+  </ul>
 </div>
 
 <script>
-  // Function to handle search input
-  const handleSearch = (query: string) => {
+  // Vanilla JavaScript search handler
+  function handleSearch(query) {
+    const resultsContainer = document.getElementById('search-results');
+    resultsContainer.innerHTML = ''; // Clear previous results
+
     if (query.length === 0) {
-      setSearchResults([]);  // Reset search results if the query is empty
       return;
     }
 
-    // Filter posts based on the query
     const results = allPosts.filter((post) =>
       post.data.title.toLowerCase().includes(query.toLowerCase()) ||
       post.data.tags.some((tag) => tag.toLowerCase().includes(query.toLowerCase()))
-    );
-    setSearchResults(results.slice(0, 5));  // Limit the results to 5
-  };
+    ).slice(0, 5); // Limit to 5 results
+
+    // Render the search results
+    results.forEach(post => {
+      const listItem = document.createElement('li');
+      listItem.innerHTML = `<a href="/blog/${post.slug}" class="block px-4 py-2 hover:bg-gray-100">${post.data.title}</a>`;
+      resultsContainer.appendChild(listItem);
+    });
+  }
 </script>
+
+<style>
+  /* Optional: Add custom styling for search results */
+</style>
 
