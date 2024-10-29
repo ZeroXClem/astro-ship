@@ -1,7 +1,7 @@
 ---
 import { useState } from 'react';
 
-const { allPosts } = Astro.props;
+const { allPosts } = Astro.props || { allPosts: [] }; // Fallback in case allPosts is undefined
 ---
 <div class="relative">
   <input
@@ -14,7 +14,7 @@ const { allPosts } = Astro.props;
   {searchResults && searchResults.length > 0 && (
     <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
       {searchResults.map((post) => (
-        <li>
+        <li key={post.slug}>
           <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
             {post.title}
           </a>
@@ -27,8 +27,7 @@ const { allPosts } = Astro.props;
 <script type="module">
   import { useState } from 'react';
 
-  function SearchBar({ allPosts }) {
-    // Initialize searchResults as an empty array
+  function SearchBar({ allPosts = [] }) { // Default to empty array if no posts are passed
     const [searchResults, setSearchResults] = useState([]);
 
     const handleSearch = (query) => {
@@ -36,6 +35,12 @@ const { allPosts } = Astro.props;
         setSearchResults([]);  // Reset search results if query is empty
         return;
       }
+
+      if (allPosts.length === 0) {
+        // No posts available to search through
+        return;
+      }
+
       const results = allPosts.filter(post =>
         post.data.title.toLowerCase().includes(query.toLowerCase()) ||
         post.data.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
