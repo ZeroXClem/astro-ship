@@ -1,0 +1,70 @@
+---
+import { useState } from 'react';
+
+const { allPosts } = Astro.props;
+---
+<div class="relative">
+  <input
+    type="text"
+    placeholder="Search..."
+    class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+    onInput={(e) => handleSearch(e.target.value)}
+    aria-label="Search"
+  />
+  {searchResults.length > 0 && (
+    <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
+      {searchResults.map((post) => (
+        <li>
+          <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
+            {post.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+
+<script type="module">
+  import { useState } from 'react';
+
+  function SearchBar({ allPosts }) {
+    const [searchResults, setSearchResults] = useState([]);
+
+    const handleSearch = (query) => {
+      if (query.length === 0) {
+        setSearchResults([]);
+        return;
+      }
+      const results = allPosts.filter(post =>
+        post.data.title.toLowerCase().includes(query.toLowerCase()) ||
+        post.data.tags.some(tag => tag.toLowerCase().includes(query.toLowerCase()))
+      );
+      setSearchResults(results.slice(0, 5)); // Limit to 5 results
+    };
+
+    return (
+      <div class="relative">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          onInput={(e) => handleSearch(e.target.value)}
+          aria-label="Search"
+        />
+        {searchResults.length > 0 && (
+          <ul class="absolute left-0 right-0 bg-white border rounded-md mt-1 max-h-60 overflow-y-auto z-10">
+            {searchResults.map((post) => (
+              <li>
+                <a href={`/blog/${post.slug}`} class="block px-4 py-2 hover:bg-gray-100">
+                  {post.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+  }
+
+  export default SearchBar;
+</script>

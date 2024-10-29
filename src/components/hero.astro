@@ -4,10 +4,8 @@ import heroImage from "assets/vector.jpg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
-
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  <div class="py-6 md:order-1 hidden md:block fade-in">
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
@@ -18,24 +16,20 @@ import { Icon } from "astro-icon";
       format="avif"
     />
   </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+  <div class="fade-in delay-500">
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
       Simplify Your AI Journey Forever
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Ship More, Faster , Easier, & Safer. 
-      <wbr /> Solving The Founder's Dilemma, Too Many Tech Stacks, Not Enough Time!  
+      Ship More, Faster, Easier, & Safer. Solving The Founder's Dilemma, Too Many Tech Stacks, Not Enough Time!
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
         href="https://beacons.ai/zeroxclem"
         target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
         <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
         Follow Us
       </Link>
       <Link
