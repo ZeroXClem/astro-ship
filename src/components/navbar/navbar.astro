@@ -2,10 +2,9 @@
 import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import NavItem from "./NavItem.astro";
-import SearchBar from "./SearchBar.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import ThemeIcon from '../ThemeIcon.astro';
-import { getCollection } from 'astro:content';
+import Search from "astro-pagefind/components/Search";
 
 const menuitems = [
   {
@@ -35,8 +34,6 @@ const menuitems = [
     path: "/waitlist",
   },
 ];
-
-const allPosts = await getCollection("blog");
 ---
 
 <Container>
@@ -77,12 +74,12 @@ const allPosts = await getCollection("blog");
 
     <!-- Desktop items: Search, Login, Signup, Theme Toggle -->
     <div class="hidden lg:flex items-center gap-4">
-      <SearchBar allPosts={allPosts} />
+      <!-- New Search Component -->
+      <Search id="search" class="pagefind-ui" />
       <a href="#" aria-label="Log in">Log in</a>
       <Link href="#" size="md" aria-label="Sign up">Sign up</Link>
     </div>
-    
+
     <ThemeIcon />
   </header>
 </Container>
-
