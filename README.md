@@ -31,7 +31,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
-```
+
 
 ---
 
