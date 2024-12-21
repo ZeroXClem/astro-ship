@@ -13,9 +13,9 @@ tags: [Renewable Energy, Climate Change, Carbon Capture, AI, Sustainability]
 ---
  Our endeavors have brought forth intriguing insights into the realms of AI in renewable energy, the impact of global energy consumption on climate change, and the evolution of carbon capture and storage technologies in 2023. The coherence of these realms is instrumental in orchestrating a sustainable future.
 
-# In-depth Analysis Report: Steering Towards a Sustainable Future
+## In-depth Analysis Report: Steering Towards a Sustainable Future
 
-## **Table of Contents**:
+### **Table of Contents**:
 1. [Artificial Intelligence in Renewable Energy](#ai-renewable)
 2. [Global Energy Consumption and Climate Change](#global-energy)
 3. [Technological Innovations in Carbon Capture and Storage](#carbon-capture)
